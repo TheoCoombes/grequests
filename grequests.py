@@ -13,7 +13,6 @@ import traceback
 
 try:
     import gevent
-    from gevent import monkey as curious_george
     from gevent.pool import Pool
 except ImportError:
     raise RuntimeError('Gevent is required for grequests.')
